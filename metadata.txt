@@ -16,8 +16,8 @@ email=carlos.cagna@ibge.gov.br
 
 about=This Plugin make the change during the node editing between Layers easier.
 
-tracker=https://github.com/CarlosCagna/Qgis/tree/master/MultipleLayersEditNodes
-repository=https://github.com/CarlosCagna/Qgis/tree/master/MultipleLayersEditNodes
+tracker=https://github.com/CarlosCagna/MultipleLayersEditNodes/issues
+repository=https://github.com/CarlosCagna/MultipleLayersEditNodes
 # End of mandatory metadata
 
 # Recommended items:
