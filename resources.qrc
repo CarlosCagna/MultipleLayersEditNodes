@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/MultipleLayersEditNodes" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
