@@ -37,12 +37,13 @@ class MultipleLayersEditNodesButton(QgsMapTool):
             if iface.legendInterface().isLayerVisible(layer):
                 if layer.geometryType()==2: 
                     for feat in layer.getFeatures():
-                        if feat.geometry().intersects(QgsRectangle ((point.x()-d), (point.y()-d), (point.x()+d), (point.y()+d))):
-                            layer.select(feat.id())
-                            layer.startEditing()
-                            iface.legendInterface().setCurrentLayer(layer)
-                            iface.actionNodeTool().trigger()
-                            layer_select = layer 
+                        if feat.geometry() <> None: 
+                            if feat.geometry().intersects(QgsRectangle ((point.x()-d), (point.y()-d), (point.x()+d), (point.y()+d))):
+                                layer.select(feat.id())
+                                layer.startEditing()
+                                iface.legendInterface().setCurrentLayer(layer)
+                                iface.actionNodeTool().trigger()
+                                layer_select = layer 
                         
         for layer in iface.legendInterface().layers():            
             if iface.legendInterface().isLayerVisible(layer):
